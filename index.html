@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/bootstrap.css">
+
+    <script src="https://kit.fontawesome.com/421b5c823b.js" crossorigin="anonymous"></script>
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <!-- Menu encabezado-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Antonia</a>
+            </div>
+            <nav id="nav" class="responsive">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- Seccion inicio-->
+    <section id="inicio">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/ini3.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>ANTONIA RETAMAL</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal1">
+                            ¿QUIEN SOY?
+                        </button>
+                    </div>
+
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/ini2.png" class=" d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>ESPECIALISTA</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/ini1.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>ESPECIALISTA</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Modal 1 -->
+    <div class="modal fade " id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel1">Todo lo que necesitas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./img/perfil.png" >
+                    <h5><b> <i> EXPERIENCIA</h5> </b></i>
+                    Ingeniera informática con más de 5 años de experiencia especializada en el desarrollo de páginas web
+                    dinámicas y funcionales, integradas con bases de datos. Experta en el diseño, implementación y
+                    mantenimiento de soluciones web escalables y de alto rendimiento. Apasionada por la creación de
+                    experiencias digitales intuitivas y centradas en el usuario, con un enfoque en la optimización de la
+                    usabilidad y la accesibilidad.  
+                </div>
+                <div class="modal-footer">
+                    <ion-icon name="color-palette-outline"></ion-icon>
+
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Seccion sobre mi-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>SOBRE MI</h2>
+            <p><span>Hola, soy Antonia Retamal.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+                non
+                laborum numquam placeat, saepe,
+                quam eveniet molestiae consequatur architecto id fuga itaque natus libero eaque quibusdam molestias
+                cumque soluta iure impedit illo pariatur illum? Impedit similique vel possimus quo aperiam.
+            </p>
+            <div class="fila">
+                <!-- datos personales-->
+                <div class="col">
+                    <h3>DATOS PERSONALES</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            15-01-2005
+                        </li>
+                        <li>
+                            <strong>Telefono</strong>
+                            +56 9 8450 4141
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            a.retamal@duocuc.cl
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.gatito.com
+                        </li>
+                        <li>
+                            <strong>Direccion</strong>
+                            psje 120 Puerto montt, Chile
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses-->
+                <div class="col">
+                    <h3>INTERESES</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-pen-nib"></i>
+                            <span>ESCRITURA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plant-wilt"></i>
+                            <span>CULTIVOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-database"></i>
+                            <span>BASE DE DATOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>SENDERISMO</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-hammer"></i>
+                            <span>CARPINTERIA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <button>
+                <a download="prueba" href="CV Antonia Retamal Mancilla.pdf"> Descargar CV </a>
+                <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Seccion skills-->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>SKILLS</h2>
+            <div class="fila">
+                <!-- Technical skills-->
+                <div class="col">
+                    <h3>HABILIDADES TECNICAS</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso Javascript">
+                                <span>80</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso htmlcss">
+                                <span>89</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL Developer</span>
+                        <div class="barra-skill">
+                            <div class="progreso sqldeveloper">
+                                <span>93</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Wordpress</span>
+                        <div class="barra-skill">
+                            <div class="progreso wordpress">
+                                <span>82</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso python">
+                                <span>75</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Profesional skills-->
+                <div class="col">
+                    <h3> HABILIDADES PROFESIONALES</h3>
+                    <div class="skill">
+                        <span>Comunicacion</span>
+                        <div class="barra-skill">
+                            <div class="progreso comunicacion">
+                                <span>80</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso trabajo">
+                                <span>70</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso creatividad ">
+                                <span>85</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicacion</span>
+                        <div class="barra-skill">
+                            <div class="progreso dedicacion">
+                                <span>92</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso proyect">
+                                <span>94</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Seccion curriculum-->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>CURRICULUM</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educacion</h3>
+                    <div class="item izq">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Universidad de Oxford</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates itaque molestias
+                            placeat esse? Vero molestias voluptatibus in pariatur beatae? Dolorum architecto, officia id
+                            ipsum minima corrupti aliquam aspernatur dicta soluta hic modi sed quibusdam labore! Quasi
+                            qui nobis ea quidem?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Universidad de Oxford</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates itaque molestias
+                            placeat esse? Vero molestias voluptatibus in pariatur beatae? Dolorum architecto, officia id
+                            ipsum minima corrupti aliquam aspernatur dicta soluta hic modi sed quibusdam labore! Quasi
+                            qui nobis ea quidem?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Universidad de Oxford</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates itaque molestias
+                            placeat esse? Vero molestias voluptatibus in pariatur beatae? Dolorum architecto, officia id
+                            ipsum minima corrupti aliquam aspernatur dicta soluta hic modi sed quibusdam labore! Quasi
+                            qui nobis ea quidem?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Nombre de compañia</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates itaque molestias
+                            placeat esse? Vero molestias voluptatibus in pariatur beatae? Dolorum architecto, officia id
+                            ipsum minima corrupti aliquam aspernatur dicta soluta hic modi sed quibusdam labore! Quasi
+                            qui nobis ea quidem?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Nombre de compañia</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates itaque molestias
+                            placeat esse? Vero molestias voluptatibus in pariatur beatae? Dolorum architecto, officia id
+                            ipsum minima corrupti aliquam aspernatur dicta soluta hic modi sed quibusdam labore! Quasi
+                            qui nobis ea quidem?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Nombre de compañia</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates itaque molestias
+                            placeat esse? Vero molestias voluptatibus in pariatur beatae? Dolorum architecto, officia id
+                            ipsum minima corrupti aliquam aspernatur dicta soluta hic modi sed quibusdam labore! Quasi
+                            qui nobis ea quidem?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion portafolio-->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="./img/p1.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./img/p2.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./img/p3.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion contacto-->
+    <section id="contacto" class="contacto">
+        <form action="#" class="formulario" id="formulario">
+            <!-- Grupo: Nombre -->
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">Nombre</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="nombre" id="nombre"
+                        placeholder="Ingrese su nombre">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">Ingrese un nombre válido.</p>
+            </div>
+
+            <!-- Grupo: Correo -->
+            <div class="formulario__grupo" id="grupo__correo">
+                <label for="correo" class="formulario__label">Correo Electrónico</label>
+                <div class="formulario__grupo-input">
+                    <input type="email" class="formulario__input" name="correo" id="correo"
+                        placeholder="correo@ejemplo.com">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">Ingrese un correo electrónico válido.</p>
+            </div>
+
+            <!-- Grupo: Teléfono -->
+            <div class="formulario__grupo" id="grupo__telefono">
+                <label for="telefono" class="formulario__label">Teléfono</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="telefono" id="telefono"
+                        placeholder="Ingrese su teléfono">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">Ingrese un número de teléfono válido.</p>
+            </div>
+
+            <!-- Grupo: Mensaje -->
+            <div class="formulario__grupo" id="grupo__mensaje">
+                <label for="mensaje" class="formulario__label">Mensaje</label>
+                <div class="formulario__grupo-input">
+                    <textarea class="formulario__input" name="mensaje" id="mensaje"
+                        placeholder="Escriba su mensaje"></textarea>
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">Ingrese su mensaje.</p>
+            </div>
+
+            <div class="formulario__mensaje" id="formulario__mensaje">
+                <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellene el formulario
+                    correctamente.</p>
+            </div>
+
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <button type="submit" class="formulario__btn">Enviar</button>
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+            </div>
+        </form>
+        <div class="mapa-contenedor">
+            <div id="mapa" class="mapa"></div>
+            <div class="info">
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Egañana 120, Puerto Montt, Chile
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        Llamanos: +56 9 8450 4141
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        Email: cw@anto.com
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="map"></div>
+
+    </section>
+
+
+    <!-- footer-->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+    </div>
+
+
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+    <script src="./js/bootstrap.js"></script>
+</body>
+
+</html>
